@@ -2,7 +2,7 @@ name: Binance RSI Monitor
 
 on:
   schedule:
-    - cron: '*/30 * * * *
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -27,4 +27,3 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
-         
